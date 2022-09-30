@@ -1,7 +1,98 @@
-/*
-Color Palette:
-background color:  
-font color:        
-secondary color:   
-tertiary color:    
-*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
+
+html {
+    font-size: 62.5%;    
+}
+
+header {
+    margin: 0 4rem;
+    letter-spacing: .8rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+
+h1{
+    font-size: 5.5rem;
+}
+
+h4{
+    font-size: 3rem;
+}
+
+h6{
+    font-size: 2rem;
+}
+
+body {
+    background: linear-gradient(180deg, #002B5B, #3F0713);
+    color: #3D0000;
+    font-family: 'Rubik Dirt', cursive;
+    margin: 0;
+}
+
+
+cite {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+a{
+    text-decoration: none;
+    color: #008891;
+}
+
+.imageCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 7rem 4rem;
+}
+
+.imageCard img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    filter: drop-shadow(.2em .4em .6em #5A8F7B);
+}
+
+.imageCard a {
+    text-decoration: none;
+    color: #FF0000;
+}
+
+.cardText {
+    color: #950101;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 30px;
+    margin-top: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container{
+    background: transparent;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+@media (min-width: 768px) {
+    header {
+        font-size: 1.6rem;
+    }
+    
+    .gallery {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    
+    .imageCard {
+        max-width: 26%;
+    }
+}
